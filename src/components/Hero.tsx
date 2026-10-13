@@ -2,7 +2,7 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { CountUp } from './case/StatBox'
 import ParticleGlobe from './hero/ParticleGlobe'
-import { GitHubIcon, LinkedInIcon } from './ui/BrandIcons'
+import { GitHubIcon, LinkedInIcon, WhatsAppIcon } from './ui/BrandIcons'
 import { EASE } from './ui/Section'
 import { SITE, scrollToId } from '../lib/site'
 
@@ -126,6 +126,9 @@ export default function Hero() {
             </a>
             <a href={SITE.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub" className={iconButton}>
               <GitHubIcon size={15} />
+            </a>
+            <a href={SITE.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className={iconButton}>
+              <WhatsAppIcon size={15} />
             </a>
           </motion.div>
         </div>

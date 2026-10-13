@@ -57,6 +57,7 @@ export default function Contact() {
               <span aria-live="polite">{copied ? 'Copied' : 'Copy email'}</span>
             </button>
             {[
+              { label: 'WhatsApp', href: SITE.whatsapp },
               { label: 'LinkedIn', href: SITE.linkedin },
               { label: 'GitHub', href: SITE.github },
             ].map((link) => (

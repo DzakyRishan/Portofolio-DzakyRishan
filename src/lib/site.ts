@@ -9,10 +9,10 @@ export const SITE = {
   role: 'Computer Science Student · Backend Developer',
   email: 'dzaky.puasawa@binus.ac.id',
   github: 'https://github.com/DzakyRishan',
-  // TODO: ganti dengan URL profil LinkedIn kamu
-  linkedin: 'https://www.linkedin.com/in/your-linkedin-id',
-  // TODO: taruh file CV di public/ dengan nama ini
+  linkedin: 'https://www.linkedin.com/in/dzaky-rishan-atha-puasawa-287823325',
+  /** CV di public/, dibuka langsung di PDF viewer browser (tab baru) */
   resume: '/CV-Dzaky-Rishan.pdf',
+  whatsapp: 'https://wa.me/6282136073220',
   location: 'Malang, Indonesia',
 } as const
 

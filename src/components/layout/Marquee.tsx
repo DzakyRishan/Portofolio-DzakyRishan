@@ -1,5 +1,5 @@
 const MESSAGE =
-  '🚧 This portfolio ships rough on purpose and gets better in public. Screenshots and case studies are still being added, so if something looks half-done, it probably is.'
+  '● Open to backend & full-stack internships · Based in Malang, Indonesia · Reach me by email or WhatsApp, I usually reply within a day'
 
 /** Banner berjalan di paling atas halaman (gaya product.inc). Berhenti saat di-hover. */
 export default function Marquee() {

@@ -112,8 +112,8 @@ export const education: EducationItem = {
     'Object Oriented Programming',
     'Data Structure',
     'Database Design',
-    'Algorithm Design and Analysis',
-    'Artificial Intelligence',
-    'Data Analytics for Business',
+    'Algorithm Design and Analysis'
+    
+    
   ],
 }

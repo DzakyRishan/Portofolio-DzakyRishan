@@ -30,19 +30,6 @@ export function getSkillIconUrl(skill: Skill): string | null {
 
 export const skillGroups: SkillGroup[] = [
   {
-    id: 'backend',
-    title: 'Backend & Database',
-    skills: [
-      { name: 'Laravel', icon: 'laravel' },
-      { name: 'Spring Boot', icon: 'spring' },
-      { name: 'Go · Gin', icon: 'go' },
-      { name: 'Express' },
-      { name: 'Flask' },
-      { name: 'MySQL', icon: 'mysql' },
-      { name: 'PostgreSQL', icon: 'postgresql' },
-    ],
-  },
-  {
     id: 'programming',
     title: 'Programming',
     skills: [
@@ -82,20 +69,20 @@ export const skillGroups: SkillGroup[] = [
 
 export const capabilities: Capability[] = [
   {
-    id: 'full-stack',
+    id: 'software-development',
     index: '01',
-    title: 'Backend & Database Development',
+    title: 'Software Development',
     description:
-      'Designing relational schemas and building the APIs on top of them, from layered Spring Boot services to SQL-first Go handlers.',
-    technologies: ['Laravel', 'Spring Boot', 'Go', 'Express', 'MySQL', 'PostgreSQL'],
+      'Building web applications and user interfaces, from frontend experiences to full application logic.',
+    technologies: ['React', 'JavaScript', 'Tailwind CSS', 'PHP', 'Laravel', 'Node.js'],
   },
   {
-    id: 'ai-ml',
+    id: 'backend-database',
     index: '02',
-    title: 'AI & Machine Learning',
+    title: 'Backend & Database',
     description:
-      'Exploring AI and Machine Learning through practical projects and AI-integrated applications.',
-    technologies: ['Python', 'AI/ML concepts'],
+      'Designing relational databases and building the backend systems that power applications.',
+    technologies: ['SQL', 'PostgreSQL', 'Laravel', 'Node.js', 'pgAdmin'],
   },
   {
     id: 'product-leadership',

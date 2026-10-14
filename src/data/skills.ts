@@ -39,6 +39,7 @@ export const skillGroups: SkillGroup[] = [
       { name: 'SQL' },
       { name: 'JavaScript', icon: 'javascript' },
       { name: 'PHP', icon: 'php' },
+      { name: 'Go', icon: 'go' },
     ],
   },
   {
@@ -53,6 +54,18 @@ export const skillGroups: SkillGroup[] = [
       { name: 'CSS', icon: 'css3' },
       { name: 'Laravel', icon: 'laravel' },
       { name: 'Node.js', icon: 'nodejs' },
+    ],
+  },
+  {
+    id: 'backend',
+    title: 'Backend & Database',
+    skills: [
+      { name: 'Go · Gin', icon: 'go' },
+      { name: 'Spring Boot', icon: 'spring' },
+      { name: 'Express' },
+      { name: 'Flask' },
+      { name: 'MySQL', icon: 'mysql' },
+      { name: 'PostgreSQL', icon: 'postgresql' },
     ],
   },
   {
@@ -82,7 +95,7 @@ export const capabilities: Capability[] = [
     title: 'Backend & Database',
     description:
       'Designing relational databases and building the backend systems that power applications.',
-    technologies: ['SQL', 'PostgreSQL', 'Laravel', 'Node.js', 'pgAdmin'],
+    technologies: ['SQL', 'MySQL', 'PostgreSQL', 'Go', 'Spring Boot', 'Laravel', 'Node.js'],
   },
   {
     id: 'product-leadership',

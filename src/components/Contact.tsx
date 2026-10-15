@@ -35,8 +35,8 @@ export default function Contact() {
             Looking for a  intern?
           </h2>
           <p className="mt-3 max-w-lg text-base leading-relaxed text-soft">
-            I&apos;m open to internships in backend and web development. Send me a message and
-            I&apos;ll get back to you within a day.
+            I&apos;m open to internships in backend and web development. 
+            Send me a message and I&apos;ll get back to you within a day.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-2.5">

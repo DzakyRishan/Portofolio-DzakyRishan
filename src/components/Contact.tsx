@@ -32,10 +32,10 @@ export default function Contact() {
         <div className="relative">
           <p className="text-[0.72rem] font-semibold uppercase tracking-[0.1em] text-accent">Work together</p>
           <h2 id="contact-heading" className="mt-3 text-3xl font-semibold tracking-tight md:text-[2.5rem]">
-            Looking for a backend intern?
+            Looking for a  intern?
           </h2>
           <p className="mt-3 max-w-lg text-base leading-relaxed text-soft">
-            I&apos;m open to internships in backend and full-stack development. Send me a message and
+            I&apos;m open to internships in backend and web development. Send me a message and
             I&apos;ll get back to you within a day.
           </p>
 

@@ -216,11 +216,17 @@ export default function CaseStudyPage() {
           initial={reduceMotion ? false : { opacity: 0, scale: 0.97 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: EASE, delay: 0.15 }}
-          className="relative mt-12 aspect-[16/10] overflow-hidden rounded-2xl border border-line sm:aspect-[21/9]"
+          className={`relative mt-12 overflow-hidden rounded-2xl border border-line ${
+            project.portrait ? 'aspect-[16/11]' : 'aspect-[16/10] sm:aspect-[21/9]'
+          }`}
           style={coverBackground(project.accent)}
         >
           {project.cover ? (
-            <img src={project.cover} alt={`${project.name} cover`} className="h-full w-full object-cover" />
+            <img
+              src={project.cover}
+              alt={`${project.name} cover`}
+              className={`h-full w-full ${project.portrait ? 'object-contain py-4' : 'object-cover'}`}
+            />
           ) : (
             <DeviceMockup project={project} width="46%" />
           )}
@@ -266,7 +272,7 @@ export default function CaseStudyPage() {
                   image={feature.image}
                   caption={feature.caption}
                   alt={`${project.name} — ${feature.title}`}
-                  className="mt-6 lg:-mx-20"
+                  className={project.portrait ? 'mx-auto mt-6 max-w-[17rem]' : 'mt-6 lg:-mx-20'}
                 />
               </Reveal>
             ))}
@@ -285,7 +291,11 @@ export default function CaseStudyPage() {
                       image={item.image}
                       caption={item.caption}
                       alt={`${project.name} — ${item.caption}`}
-                      className="w-[78%] shrink-0 snap-center sm:w-[60%]"
+                      className={
+                        project.portrait
+                          ? 'w-[52%] shrink-0 snap-center sm:w-[38%]'
+                          : 'w-[78%] shrink-0 snap-center sm:w-[60%]'
+                      }
                     />
                   ))}
                 </div>

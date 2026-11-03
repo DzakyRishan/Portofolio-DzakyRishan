@@ -104,7 +104,7 @@ export default function Projects() {
       id="work"
       eyebrow="Cases"
       title="Selected work"
-      description="Four projects spanning AI pet care, e-commerce, campus systems and retail POS."
+      description="Five projects spanning AI pet care, e-commerce, campus systems, retail POS and civic reporting."
     >
       <div className="grid gap-x-7 gap-y-12 md:grid-cols-2">
         {projects.map((project, position) => (

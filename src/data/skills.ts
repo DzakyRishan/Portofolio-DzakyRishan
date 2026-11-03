@@ -40,6 +40,15 @@ export const skillGroups: SkillGroup[] = [
       { name: 'JavaScript', icon: 'javascript' },
       { name: 'PHP', icon: 'php' },
       { name: 'Go', icon: 'go' },
+      { name: 'Dart', icon: 'dart' },
+    ],
+  },
+  {
+    id: 'mobile',
+    title: 'Mobile Development',
+    skills: [
+      { name: 'Flutter', icon: 'flutter' },
+      { name: 'Dart', icon: 'dart' },
     ],
   },
   {

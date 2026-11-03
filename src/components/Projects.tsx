@@ -56,9 +56,9 @@ function ProjectCard({ project, position }: { project: Project; position: number
                 src={image}
                 alt=""
                 loading="lazy"
-                className={`cover-zoom absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-                  index === slide ? 'opacity-100' : 'opacity-0'
-                }`}
+                className={`cover-zoom absolute inset-0 h-full w-full transition-opacity duration-700 ${
+                  project.portrait ? 'object-contain py-3' : 'object-cover'
+                } ${index === slide ? 'opacity-100' : 'opacity-0'}`}
               />
             ))
           ) : (
@@ -104,7 +104,7 @@ export default function Projects() {
       id="work"
       eyebrow="Cases"
       title="Selected work"
-      description="Four projects spanning AI pet care, e-commerce, campus systems and retail POS."
+      description="Five projects spanning AI pet care, e-commerce, campus systems, retail POS and civic reporting."
     >
       <div className="grid gap-x-7 gap-y-12 md:grid-cols-2">
         {projects.map((project, position) => (

@@ -8,7 +8,7 @@ import { SITE, scrollToId } from '../lib/site'
 
 // Angka nyata dari data portofolio. Ubah di sini kalau ada yang bertambah.
 const STATS = [
-  { label: 'Featured projects', value: 4, plus: true },
+  { label: 'Featured projects', value: 5, plus: true },
   { label: 'Backend frameworks', value: 5, plus: true },
   { label: 'Campus roles held', value: 5, plus: true },
   { label: 'Courses assisted', value: 2, plus: false },

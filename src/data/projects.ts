@@ -59,6 +59,8 @@ export interface Project {
   gallery?: { image?: string; caption: string }[]
   github?: string
   liveDemo?: string
+  /** Screenshot portrait (aplikasi mobile): tampilkan utuh, jangan di-crop landscape */
+  portrait?: boolean
 }
 
 export const projects: Project[] = [
@@ -374,6 +376,86 @@ export const projects: Project[] = [
       { image: '/images/projects/edja-corner/pos-barang-masuk.webp', caption: 'POS stock-in' },
     ],
     github: 'https://github.com/DzakyRishan/Edja-Corner',
+  },
+  {
+    id: 'ruascare',
+    index: '05',
+    name: 'RuasCare',
+    headline: 'Letting citizens report damaged roads and track every repair',
+    subtitle: 'Damaged-Road Reporting App for Citizens and Officers',
+    role: 'Full-Stack Developer',
+    roleDetail:
+      'I built the whole stack: the Flutter mobile app with Riverpod state management, go_router auth guards and a Dio HTTP client, and the Spring Boot backend with JWT authentication, role-based access and a PostgreSQL schema. I designed the API contract and connected both sides.',
+    tags: ['Full-Stack', 'Mobile', 'Civic Tech'],
+    cardStack: ['Flutter', 'Spring Boot', 'PostgreSQL'],
+    problem:
+      'Citizens see damaged roads all the time, but there is no clear channel to report one and follow up on it. A phone call or a social-media post disappears into a queue: the reporter never finds out whether anyone looked at it, officers have no structured list to triage, and there is no record of how a report moved from reported to repaired.',
+    solution:
+      'RuasCare connects both sides in one app. A citizen reports with a real GPS location, 2 to 3 photos, a description and a severity (ringan, sedang, parah), and sees nearby reports on an OpenStreetMap view with a 5 km default radius, capped at 10 km on the backend. Officers then verify a report, reject it with a mandatory reason, or mark it repaired with proof-of-repair photos, while every status change is kept as history.',
+    features: [
+      {
+        title: 'A report with a place on the map',
+        body: 'A citizen fills a form with the road name, a real GPS location, a severity and 2 to 3 photos from the camera or gallery. Nearby reports show up on an OpenStreetMap view within a 5 km default radius, so duplicates are easy to spot.',
+        image: '/images/projects/ruascare/buat-laporan.png',
+        caption: 'Create a report',
+      },
+      {
+        title: 'A dashboard officers can triage',
+        body: 'Officers see every report filtered by status and severity, then verify it, reject it with a required reason, or mark it repaired. Rejected reports can be resubmitted by the citizen with new photos or notes.',
+        image: '/images/projects/ruascare/dashboard-petugas.png',
+        caption: 'Officer dashboard',
+      },
+      {
+        title: 'Status that can only move forward',
+        body: 'A report moves Dilaporkan → Diverifikasi → Diperbaiki, and the backend validates every transition. Each change is written to a history log, so both sides can see exactly what happened and when.',
+        image: '/images/projects/ruascare/detail-diperbaiki.png',
+        caption: 'Report detail with status history',
+      },
+    ],
+    statsTitle: 'Project Scope',
+    stats: [
+      { label: 'User roles', value: 2, caption: 'Citizen and officer, each with its own flow.' },
+      { label: 'Status stages', value: 3, caption: 'Dilaporkan, Diverifikasi and Diperbaiki, with history.' },
+      { label: 'Severity levels', value: 3, caption: 'Ringan, sedang and parah.' },
+      { label: 'Nearby radius', value: 10, caption: 'Km max on the map, 5 km by default, enforced on the backend.' },
+    ],
+    impact: [
+      {
+        verb: 'Empowered',
+        text: 'citizens to report damaged roads with a GPS location, photos and severity, instead of an untracked phone call.',
+      },
+      {
+        verb: 'Streamlined',
+        text: 'triage for officers with one dashboard filtered by status and severity.',
+      },
+      {
+        verb: 'Improved',
+        text: 'accountability for both sides by recording every status change as history, from reported to repaired with proof-of-repair photos.',
+      },
+      {
+        verb: 'Protected',
+        text: 'reporter identity by never sending it on the public API, only on officer endpoints.',
+      },
+    ],
+    keyLearning:
+      'I worked on RuasCare from the full-stack side, and it taught me to treat the API contract as the single source of truth. The frontend, backend and Postman collection all follow the same contract, so a bug like a severity enum that did not match between Flutter and Spring showed up fast. On the Flutter side I used Riverpod for state and go_router for role-based navigation, with a feature-first structure and a repository layer (mock and API) so the UI could be tested without a backend. On backend security, user identity comes from the JWT rather than a forgeable header, roles are checked in two layers (@PreAuthorize and a URL matcher), public registration always creates a citizen account, and photo uploads are validated by file signature, size and a random file name.',
+    stack: [
+      { group: 'Mobile', items: ['Flutter', 'Dart', 'Riverpod', 'go_router', 'Dio'] },
+      { group: 'Backend', items: ['Java 17', 'Spring Boot 3.3'] },
+      { group: 'Security', items: ['JWT', 'BCrypt'] },
+      { group: 'Database', items: ['PostgreSQL'] },
+      { group: 'Maps', items: ['flutter_map (OpenStreetMap)'] },
+    ],
+    accent: '#6d8bff',
+    tone: '#3f7cc9',
+    portrait: true,
+    cover: '/images/projects/ruascare/home.png',
+    gallery: [
+      { image: '/images/projects/ruascare/login.png', caption: 'Login with demo accounts' },
+      { image: '/images/projects/ruascare/peta.png', caption: 'Nearby reports on the map' },
+      { image: '/images/projects/ruascare/detail-ditolak.png', caption: 'Rejected report with reason' },
+    ],
+    github: 'https://github.com/DzakyRishan/RuasCare',
   },
 ]
 

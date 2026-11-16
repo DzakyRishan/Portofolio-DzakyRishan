@@ -104,7 +104,7 @@ export const education: EducationItem = {
   id: 'binus-malang',
   institution: 'BINUS University Malang',
   program: 'Computer Science Undergraduate',
-  gpa: '3.36 / 4.00',
+  gpa: '3.35 / 4.00',
   period: 'Sep 2024 — Present',
   coursework: [
     'Software Engineering',

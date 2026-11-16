@@ -6,7 +6,7 @@ export const SITE = {
   initials: 'DR',
   /** Logo gaya 'A — Z' milik product.inc */
   monogram: ['D', 'R'],
-  role: 'Computer Science Student · Backend Developer',
+  role: 'Computer Science Student · Software Developer',
   email: 'dzaky.puasawa@binus.ac.id',
   github: 'https://github.com/DzakyRishan',
   linkedin: 'https://www.linkedin.com/in/dzaky-rishan-atha-puasawa-287823325',

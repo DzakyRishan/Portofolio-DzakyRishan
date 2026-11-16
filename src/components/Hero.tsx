@@ -9,11 +9,11 @@ import { SITE, scrollToId } from '../lib/site'
 // Angka nyata dari data portofolio. Ubah di sini kalau ada yang bertambah.
 const STATS = [
   { label: 'Featured projects', value: 5, plus: true },
-  { label: 'Backend frameworks', value: 5, plus: true },
+  { label: 'Frameworks used', value: 7, plus: true },
   { label: 'Campus roles held', value: 5, plus: true },
   { label: 'Courses assisted', value: 2, plus: false },
   { label: 'Awards', value: 2, plus: false },
-  { label: 'GPA', value: 3.36, decimals: 2, plus: false },
+  { label: 'GPA', value: 3.35, decimals: 2, plus: false },
 ] as const
 
 /** Tanda siku kecil di empat pojok bingkai hero */
@@ -90,16 +90,14 @@ export default function Hero() {
           </motion.h1>
 
           <motion.p {...fadeUp(0.26)} className="mt-6 max-w-[38rem] text-[0.98rem] leading-[1.75] text-soft">
-            Computer Science student at BINUS University Malang who builds backends and the databases
-            under them, in Laravel, Spring Boot and Go. Recently built{' '}
-            <Link to="/work/pawcation" className="inline-link">PawCation</Link>, an AI pet-care
-            platform with breed detection, designed the schema and API behind{' '}
-            <Link to="/work/farmfresh" className="inline-link">FarmFresh</Link> and{' '}
-            <Link to="/work/campus-inventory" className="inline-link">Campus Inventory</Link>, and
-            managed the team that shipped{' '}
-            <Link to="/work/edja-corner" className="inline-link">Edja Corner</Link>. Teaching
-            assistant for Database Technology and Publication &amp; Marketing manager at HIMTI Malang.
-            Open to internships in backend and full-stack development.
+            Computer Science student at BINUS University Malang with a strong interest in software
+            development. Experienced in building end-to-end solutions, from independently developing{' '}
+            <Link to="/work/pawcation" className="inline-link">PawCation</Link>, an AI-integrated pet
+            care platform, to leading the team behind{' '}
+            <Link to="/work/edja-corner" className="inline-link">Edja Corner</Link> as Scrum Master and
+            PM. Currently Manager of Publication &amp; Marketing at HIMTI Malang and Teaching Assistant
+            for Database Technology and Computational Physics. I combine technical skills, team
+            leadership and mentoring to build scalable, user-focused software.
           </motion.p>
 
           <motion.div {...fadeUp(0.34)} className="mt-7 flex flex-wrap items-center gap-2.5">

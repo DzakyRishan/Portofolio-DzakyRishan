@@ -1,5 +1,5 @@
 const MESSAGE =
-  '● Open to backend & full-stack internships · Based in Malang, Indonesia · Reach me by email or WhatsApp, I usually reply within a day'
+  '● Open to software & full-stack internships · Based in Malang, Indonesia · Reach me by email or WhatsApp, I usually reply within a day'
 
 /** Banner berjalan di paling atas halaman (gaya product.inc). Berhenti saat di-hover. */
 export default function Marquee() {
